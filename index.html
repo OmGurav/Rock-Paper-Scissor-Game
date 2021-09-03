@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div id="container">
+		<div id="header">Rock Paper Scissors</div>
+			<div class="row p-4">
+				<div id="scores" class="col-12">
+					<div id="user">User</div>
+					<div id="userScore">0</div>
+					<div id="sign">:</div>
+					<div id="compScore">0</div>
+					<div id="comp">Comp</div>
+				</div>
+			</div>
+			<div class="row p-4">
+			<div id="options" class="col-12">
+				<button id="rock" class="choice" value="rock" onclick="main(this.value)">
+					<img src="img/hand-rock-regular.svg" alt=""></button>
+				<button id="paper" class="choice" value="paper" onclick="main(this.value)">
+					<img src="img/hand-paper-regular.svg"></button>
+				<button id="scissors" class="choice" value="scissors" onclick="main(this.value)">
+					<img src="img/hand-scissors-regular.svg"></button>
+			</div>
+			</div>
+			<div class="row p-5">
+			<div id="result" class="col-12">
+				<div id="userResult">
+					<img src="img/hand-rock-regular.svg" alt="">
+				</div>
+				<h3 id="user_text">User</h3>
+				<div id="result_text">It's a Draw.</div>
+				<div id="compResult">
+					<img src="img/hand-rock-regular.svg" alt="">
+				</div>
+				<h3 id="comp_text">Comp</h3>
+			</div>
+			</div>
+			<div id="reload">
+				<button id="reload_button" onclick="myFunction()" value="Reload"> Restart </button>
+			</div>
+	</div>
+
+	<script src="rps.js"></script>
+</body>
+</html>
